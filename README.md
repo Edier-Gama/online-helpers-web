@@ -1,5 +1,7 @@
 # Astro Starter Kit: Minimal
 
+# Creative Commons BY-NC License (No Comercial)
+
 ```sh
 npm create astro@latest -- --template minimal
 ```
