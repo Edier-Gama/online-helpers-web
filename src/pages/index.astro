@@ -1,6 +1,10 @@
 ---
+import Layout from "../layouts/Layout.astro";
 
-
+import '@fontsource-variable/inter'
+import '@fontsource/ubuntu'
+import '@fontsource/poppins'
+import '@fontsource-variable/montserrat'
 ---
 <html lang="en">
 	<head>
@@ -10,7 +14,30 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Online Helpers</title>
 	</head>
-	<body>
-		<h1>Online Helpers</h1>
-	</body>
+	<Layout>
+		<body>
+			<a href="/header">About Us</a>
+			<h2>Online Helpers</h2>
+			<h3>Work for groundbreaking, innovative companies from the comfort and safety of your own home
+</h3>
+		</body>
+	</Layout>
 </html>
+
+<style>
+    	h2 {
+		font-family: 'Poppins';
+		font-size: 4.5rem;
+	}
+		h3 {
+		font-family: 'Ubuntu';
+		font-size: 2.5rem;
+	}
+
+	a {
+		font-family: 'Poppins';
+		font-size: 1rem;
+		text-decoration: none;
+		color: black;
+	}
+</style>
