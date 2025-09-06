@@ -1,15 +1,25 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import "../styles/global.css";
+import '@fontsource/poppins'
 ---
 
 <header class="header">
   <div class="header__container">
-      <nav class="header__nav">
+      <nav class="header__nav flex gap-8 p-4 m-4 justify-end max-w-6xl mx-auto">
         <a href="/">Home</a>
-        <a href="/header">Benefits</a>
-        <a href="/header">Careers</a>
-        <a href="/header">About Us</a>
-        <a href="/header">Gallery</a>
+        <a href="/">Benefits</a>
+        <a href="/">Careers</a>
+        <a href="/">About Us</a>
+        <a href="/">Gallery</a>
       </nav>
   </div>
 </header>
+
+<style>
+  a {
+    font-family: 'Poppins';
+    font-size:1rem;
+    text-decoration: none;
+    color: #1F2937;
+  }
+</style>
