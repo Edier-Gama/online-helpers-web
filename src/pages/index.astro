@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
 
 import '@fontsource-variable/inter'
 import '@fontsource/ubuntu'
 import '@fontsource/poppins'
+import '@fontsource-variable/edu-nsw-act-cursive';
 import '@fontsource-variable/montserrat'
+import Mapamundi from "../components/Mapamundi.astro";
 ---
 <html lang="en">
 	<head>
@@ -15,12 +18,21 @@ import '@fontsource-variable/montserrat'
 		<title>Online Helpers</title>
 	</head>
 	<Layout>
-		<main>
-			<section>
-				<div>
-					<h1 class='text-6xl mt-28 font-bold'>Online Helpers</h1>
-					<p class="text-3xl mt-5 max-w-3xl">Work for groundbreaking, innovative companies from the comfort and safety of your own home</p>
+		<main class="flex" >
+			<section class="flex">
+				<div class="">
+					<h2 class="text-6xl mt-40 text-shadow-2xs">Welcome to</h2>
+					<h1 class='text-7xl font-semibold text-shadow-lg/55'>Online Helpers</h1>
+					<p class="text-2xl mt-5 max-w-3xl">Work for groundbreaking, innovative companies from the comfort and safety of <b>your own home</b></p>
+					<section class="mt-10 flex gap-4">
+						<Button title="Spanish Jobs"/>
+						<Button title="English Jobs"/>
+					</section>
 				</div>
+				<section class="flex flex-col items-center">
+				    <Mapamundi />
+				    <h3 class="text-3xl mb-30">Find a Job Worldwide</h3>
+				</section>
 			</section>
 		</main>
 	</Layout>
@@ -28,12 +40,21 @@ import '@fontsource-variable/montserrat'
 
 <style>
   h1 {
-	font-family: 'Ubuntu';
-	color: #FBBF24;
-  }
-  p {
 	font-family: 'Poppins';
-	color: #1F2937;
+	color:rgb(255, 225, 0)
   }
+  h2 {
+	font-family: 'Edu NSW ACT Cursive Variable';
+	line-height: 50px;
+}
+  p {
+	font-family: 'Montserrat Variable';
+	color: #000000;
+  }
+  h3 {
+	font-family: 'Edu NSW ACT Cursive Variable';
+	color: #000000;
+
+}
   
 </style>

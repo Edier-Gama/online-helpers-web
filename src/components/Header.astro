@@ -1,17 +1,26 @@
 ---
 import "../styles/global.css";
 import '@fontsource/poppins'
+import logoOh from './onlinehelpers.png'
+import { Image } from "astro:assets";
 ---
 
 <header class="header">
   <div class="header__container">
-      <nav class="header__nav flex gap-8 p-4 m-4 justify-end max-w-6xl mx-auto">
+    <nav class="header__nav flex gap-8 p-4 max-w-6xl mx-auto justify-between">
+      <section class="">
+        <div>
+          <Image src={logoOh} alt="Logo" width={150} height={50} />
+        </div>
+      </section>
+      <section class="flex gap-8 p-4 m-4">
         <a href="/">Home</a>
         <a href="/">Benefits</a>
         <a href="/">Careers</a>
         <a href="/">About Us</a>
         <a href="/">Gallery</a>
-      </nav>
+      </section>
+    </nav>
   </div>
 </header>
 
