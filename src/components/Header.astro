@@ -1,34 +1,32 @@
 ---
 import "../styles/global.css";
 import '@fontsource/poppins'
-import logoOh from './onlinehelpers.png'
+import logoOh from '../../public/OH.jpg';
 import { Image } from "astro:assets";
+// Supports weights 100-900
+import '@fontsource-variable/onest';
+import LinkButton from "./LinkButton.astro";
+import AnchorLink from "./AnchorLink.astro";
+import ArrowDown from "./ArrowDown.astro";
 ---
 
 <header class="header">
   <div class="header__container">
-    <nav class="header__nav flex gap-8 p-4 max-w-6xl mx-auto justify-between">
-      <section class="">
-        <div>
-          <Image src={logoOh} alt="Logo" width={150} height={50} />
-        </div>
+    <nav class="header__nav flex justify-between m-auto">
+      <section class="flex gap-8 items-center m-4">
+        <img src="../../public/OH.jpg" alt="" object-fit="cover" class="w-15 h-15 rounded-full"/>
       </section>
-      <section class="flex gap-8 p-4 m-4">
-        <a href="/">Home</a>
-        <a href="/">Benefits</a>
-        <a href="/">Careers</a>
-        <a href="/">About Us</a>
-        <a href="/">Gallery</a>
+      <section class="flex gap-8 p-4 m-4 mr-20 mb-2">
+        <div class="flex">
+          <AnchorLink text='Home' secondText="Social" thirdText="Gallery"/>
+        </div>
+        <div class="flex">
+          <AnchorLink text='Carrers' secondText="Spanish Jobs" thirdText="English Jobs"/>
+        </div>
+        <div class="flex">
+          <AnchorLink text='About Us' secondText="Benefits" thirdText="Privacy"/>
+        </div>
       </section>
     </nav>
   </div>
 </header>
-
-<style>
-  a {
-    font-family: 'Poppins';
-    font-size:1rem;
-    text-decoration: none;
-    color: #1F2937;
-  }
-</style>

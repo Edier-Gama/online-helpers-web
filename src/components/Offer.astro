@@ -1,0 +1,32 @@
+---
+import OfferCard from './OfferCard.astro';
+import '@fontsource-variable/onest';
+---
+
+<section class="flex flex-col justify-center m-4 p-4 mt-30">
+    <div class="flex justify-center">
+        <h1 class="text-4xl text-center what-text">What</h1>
+        <h1 class="text-4xl text-center ml-2">we</h1>
+        <h1 class="text-4xl text-center ml-2 offer-text text-shadow-lg/55">Offer:</h1>
+    </div>
+    <div class="flex gap-8 justify-center mt-10 flex-wrap">
+        <OfferCard upText="Starting Rate" downText="$3/hour" svg="../../public/income.svg"/> 
+        <OfferCard upText="Work From" downText="Home" svg="../../public/home.svg"/>  
+        <OfferCard upText="Get Paid" downText="Reliably" svg="../../public/withdraw.svg"/>  
+        <OfferCard upText="Long Term" downText="Contract" svg="../../public/contract.svg"/>  
+    </div>
+</section>
+
+<style>
+    h1 {
+        font-family: 'Onest Variable', sans-serif;
+        font-weight: 600;
+        color: rgb(63, 63, 63);
+    }
+    .offer-text {
+        color: #f6e201;
+    }
+    .what-text {
+        color: #ff02d1;
+    }
+</style>

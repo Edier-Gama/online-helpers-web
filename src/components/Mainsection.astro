@@ -1,0 +1,56 @@
+---
+import '@fontsource-variable/inter'
+import '@fontsource/ubuntu'
+import '@fontsource/poppins'
+import '@fontsource-variable/edu-nsw-act-cursive';
+import '@fontsource-variable/montserrat'
+import '@fontsource-variable/onest';
+import LinkButton from "../components/LinkButton.astro";
+import { Image } from 'astro:assets';
+
+---
+
+
+<main class="flex m-4 p-4 animate-fade-in-up mt-10">
+	<section class="flex flex-col w-7xl">
+		<section class="mt-20 z-10">
+			<h2 class="text-6xl text-shadow-2xs font-bold">Become Virtual Assistant</h2>
+			<h1 class='text-6xl font-semibold text-shadow-lg/55'>With Online Helpers</h1>
+		</section>
+		<section class="flex flex-col mt-10 max-w-2xl">
+			 <p class="text-2xl max-w-3xl">Work for groundbreaking, innovative companies <br> from the comfort and safety of your own home</p>
+			<section class="mt-10 flex gap-4">
+				<LinkButton href="/apply">Spanish Jobs</LinkButton>
+				<LinkButton href="/apply">English Jobs</LinkButton>
+			</section>
+		</section>
+	</section>
+	<section class="mt-10">
+		<img src="../../public/remote-work.png" alt="" class="animate-zoom-i hover:scale-105 transition-transform duration-300"/>
+	</section>
+</main>	
+
+
+<style>
+  h1 {
+	font-family: 'Onest Variable';
+	line-height: -4;
+	color:#f6e201
+  }
+  h2 {
+	font-family: 'Onest Variable';
+	color: rgb(63, 63, 63);
+	font-weight: 800;
+	height: 55px;
+}
+  p {
+	font-family: 'Onest Variable';
+	color: #000000;
+  }
+  h3 {
+	font-family: 'Edu NSW ACT Cursive Variable';
+	color: #000000;
+
+}
+  
+</style>
