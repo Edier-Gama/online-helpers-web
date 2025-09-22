@@ -11,22 +11,21 @@ import { Image } from 'astro:assets';
 ---
 
 
-<main class="flex m-4 p-4 animate-fade-in-up mt-10">
-	<section class="flex flex-col w-7xl">
+<main class="flex m-4 p-4 animate-fade-in-up">
+	<section class="flex flex-col w-6xl">
 		<section class="mt-20 z-10">
-			<h2 class="text-6xl text-shadow-2xs font-bold">Become Virtual Assistant</h2>
-			<h1 class='text-6xl font-semibold text-shadow-lg/55'>With Online Helpers</h1>
+			<h2 class="text-5xl font-bold max-w-xl">Work from home Anywhere. Your Dream Job Awaits</h2>
 		</section>
-		<section class="flex flex-col mt-10 max-w-2xl">
-			 <p class="text-2xl max-w-3xl">Work for groundbreaking, innovative companies <br> from the comfort and safety of your own home</p>
+		<section class="flex flex-col mt-30 max-w-2xl">
+			 <p class="text-2xl max-w-3xl">Work for groundbreaking, innovative companies <br> from the comfort and safety of your own home with Online Helpers</p>
 			<section class="mt-10 flex gap-4">
-				<LinkButton href="/apply">Spanish Jobs</LinkButton>
-				<LinkButton href="/apply">English Jobs</LinkButton>
+				<LinkButton href="/apply" content="Apply now"></LinkButton>
+				<LinkButton href="/apply" content="About Us"></LinkButton>
 			</section>
 		</section>
 	</section>
-	<section class="mt-10">
-		<img src="../../public/remote-work.png" alt="" class="animate-zoom-i hover:scale-105 transition-transform duration-300"/>
+	<section class="mt-20 relative z-10">
+		<img src="../../public/remote-work.png" alt="" class="mb-20 animate-zoom-i hover:scale-105 transition-transform duration-300"/>
 	</section>
 </main>	
 
@@ -39,7 +38,7 @@ import { Image } from 'astro:assets';
   }
   h2 {
 	font-family: 'Onest Variable';
-	color: rgb(63, 63, 63);
+	color: rgb(0, 0, 0);
 	font-weight: 800;
 	height: 55px;
 }

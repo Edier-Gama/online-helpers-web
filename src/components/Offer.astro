@@ -3,11 +3,10 @@ import OfferCard from './OfferCard.astro';
 import '@fontsource-variable/onest';
 ---
 
-<section class="flex flex-col justify-center m-4 p-4 mt-30">
-    <div class="flex justify-center">
-        <h1 class="text-4xl text-center what-text">What</h1>
-        <h1 class="text-4xl text-center ml-2">we</h1>
-        <h1 class="text-4xl text-center ml-2 offer-text text-shadow-lg/55">Offer:</h1>
+<section class="flex flex-col justify-center m-4 p-4">
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-4xl">What We Offer</h1>
+      <p class="p-4 text-xl max-w-2xl text-center">Join us and get the best of remote work. We provide reliable payments, long-term parterships, and the flexibility to work from the comfort of your home.</p>
     </div>
     <div class="flex gap-8 justify-center mt-10 flex-wrap">
         <OfferCard upText="Starting Rate" downText="$3/hour" svg="../../public/income.svg"/> 
@@ -23,10 +22,5 @@ import '@fontsource-variable/onest';
         font-weight: 600;
         color: rgb(63, 63, 63);
     }
-    .offer-text {
-        color: #f6e201;
-    }
-    .what-text {
-        color: #ff02d1;
-    }
+
 </style>
