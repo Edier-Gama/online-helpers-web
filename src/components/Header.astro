@@ -10,13 +10,13 @@ import AnchorLink from "./AnchorLink.astro";
 import ArrowDown from "./ArrowDown.astro";
 ---
 
-<header class="header ">
-  <div class="header__container hidden xl:flex m-4 p-4 justify-between">
-    <div>
-      <img src="/OH.jpg" alt="" object-fit="cover" class="w-25 rounded-full"/>    
-    </div>
+<header class="header flex justify-between items-center p-4 m-auto max-w-6xl">
+  <div>
+    <img src="/OH.jpg" alt="" class="sm:w-30 rounded-full w-25 m-4 p-4"/>    
+  </div>
+  <div class='header__container hidden xl:flex'>
     <nav class="header__nav flex">
-      <section class="flex gap-8 p-4 m-4 mb-10 z-10">
+      <section class="flex gap-8 mb-10 z-10">
         <div class="flex">
           <AnchorLink text='Home' secondText="Social" thirdText="Gallery"/>
         </div>
