@@ -8,12 +8,20 @@ import '@fontsource-variable/onest';
 import LinkButton from "./LinkButton.astro";
 import AnchorLink from "./AnchorLink.astro";
 import ArrowDown from "./ArrowDown.astro";
+import Hamburger from "./Hamburger.astro";
 ---
 
-<header class="header flex justify-between items-center p-4 m-auto max-w-6xl">
-  <div>
-    <img src="/OH.jpg" alt="" class="sm:w-30 rounded-full w-25 m-4 p-4"/>    
-  </div>
+<header class="header flex justify-between items-center m-auto max-w-6xl">
+  <section>
+    <div class="flex items-center justify-between">
+      <div>
+        <img src="/OH.jpg" alt="" class="sm:w-30 rounded-full w-30 m-4 p-4"/>
+      </div>
+      <div class="xl:hidden absolute right-0 m-4 p-4">
+        <Hamburger />
+      </div>   
+    </div>
+  </section>
   <div class='header__container hidden xl:flex'>
     <nav class="header__nav flex">
       <section class="flex gap-8 mb-10 z-10">
