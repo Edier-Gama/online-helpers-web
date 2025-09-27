@@ -11,21 +11,21 @@ import ArrowDown from "./ArrowDown.astro";
 ---
 
 <header class="header">
-  <div class="header__container">
-    <nav class="header__nav flex justify-between m-auto">
-      <section class="flex gap-8 p-4 m-4 mb-2">
+  <div class="header__container flex m-4 p-4 justify-between">
+    <div>
+      <img src="/OH.jpg" alt="" object-fit="cover" class="w-25 rounded-full"/>    
+    </div>
+    <nav class="header__nav flex">
+      <section class="flex gap-8 p-4 m-4 mb-10 z-10">
         <div class="flex">
           <AnchorLink text='Home' secondText="Social" thirdText="Gallery"/>
         </div>
         <div class="flex">
-          <AnchorLink text='Carrers' secondText="Spanish Jobs" thirdText="English Jobs"/>
+          <AnchorLink text='Carrers' secondText="Spanish Jobs" thirdText="English Jobs" fourText="Technician"/>
         </div>
         <div class="flex">
           <AnchorLink text='About Us' secondText="Benefits" thirdText="Privacy"/>
         </div>
-      </section>
-      <section class="flex gap-8 items-center m-4 p-4 mr-30">
-            <img src="/OH.jpg" alt="" object-fit="cover" class="w-15 rounded-full"/>    
       </section>
     </nav>
   </div>
