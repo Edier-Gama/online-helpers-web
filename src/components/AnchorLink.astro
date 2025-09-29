@@ -1,5 +1,5 @@
 ---
-const {secondText, thirdText, text, fourText} = Astro.props;
+const {secondText, thirdText, text, fourText, idSecond, idThird, idFour} = Astro.props;
 import '@fontsource/poppins'
 ---
 <div class="menu">
@@ -17,15 +17,15 @@ import '@fontsource/poppins'
     </a>
     <div class="submenu">
       <div class="submenu-item">
-        <a href="#" class="submenu-link">{secondText}</a>
+        <a href={idSecond} class="submenu-link">{secondText}</a>
       </div>
       <div class="submenu-item">
-        <a href="#" class="submenu-link">{thirdText}</a>
+        <a href={idThird} class="submenu-link">{thirdText}</a>
       </div>
       {fourText ?  
      <div class="submenu-item">
-       <a href="#" class="submenu-link">{fourText}</a>
-     </div>  : null
+       <a href={idFour} class="submenu-link">{fourText}</a>
+     </div>  : null 
       }
     </div>
   </div>

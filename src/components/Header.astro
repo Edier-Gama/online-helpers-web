@@ -15,7 +15,7 @@ import Hamburger from "./Hamburger.astro";
   <section>
     <div class="flex items-center justify-between">
       <div>
-        <img src="/OH.jpg" alt="" class="sm:w-30 rounded-full w-30 m-4 p-4"/>
+        <img src="/OH.jpg" alt="" class="sm:w-30 rounded-full w-25 m-4 p-4"/>
       </div>
       <div class="xl:hidden absolute right-0 m-4 p-4">
         <Hamburger />
@@ -26,13 +26,32 @@ import Hamburger from "./Hamburger.astro";
     <nav class="header__nav flex">
       <section class="flex gap-8 mb-10 z-10">
         <div class="flex">
-          <AnchorLink text='Home' secondText="Social" thirdText="Gallery"/>
+          <AnchorLink 
+              text='Home' 
+              secondText="Social" 
+              thirdText="Gallery" 
+              idSecond="#social" 
+              idThird="gallery"/>
         </div>
         <div class="flex">
-          <AnchorLink text='Carrers' secondText="Spanish Jobs" thirdText="English Jobs" fourText="Technician"/>
+          <AnchorLink 
+             text='Carrers' 
+             secondText="Spanish Jobs" 
+             thirdText="English Jobs" 
+             fourText="Technician"
+             idSecond="/spanish"
+             idThird="/english"
+             idFour="/technician"
+             />
         </div>
         <div class="flex">
-          <AnchorLink text='About Us' secondText="Benefits" thirdText="Privacy"/>
+          <AnchorLink 
+             text='About Us' 
+             secondText="Benefits" 
+             thirdText="Privacy"
+             idSecond="#offer"
+             idThird="/privacy"
+           />
         </div>
       </section>
     </nav>

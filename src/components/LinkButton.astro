@@ -5,7 +5,7 @@ import '@fontsource/poppins'
 import '@fontsource-variable/onest';
 ---
 
-<button><a href={href}>{content}</a></button>
+<a href={href}>{content}</a>
 
 
 <style>
@@ -17,7 +17,7 @@ import '@fontsource-variable/onest';
         font-size: inherit;
         line-height: inherit;
     }
-button {
+a {
   background: #fbca1f;
   font-family: inherit;
   padding: 0.6em 1.3em;
@@ -29,12 +29,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+a:hover {
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
 }
 
-button:active {
+a:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
