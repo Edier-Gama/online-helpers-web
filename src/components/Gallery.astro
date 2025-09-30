@@ -1,0 +1,115 @@
+---
+import 'photoswipe/style.css';
+import '@fontsource-variable/onest'
+const IMAGES = ['/setup-01.jpg','/setup-02.jpg', '/setup-03.jpg']
+
+---
+
+<section class="mt-40">
+    <section class="flex flex-col justify-center items-center text-4xl p-10">
+        <h1 class="font-bold p-4">Be part of the best team</h1>
+        <p class="p-4 text-lg">Level up your skills, connect with amazing people, and enjoy every step of the journey with us.</p>
+    </section>
+    <div class="pswp-gallery flex flex-wrap justify-center" id="gallery">
+        {
+            IMAGES.map(image => (
+                
+             <section class="stack p-10">
+                <div class="card">
+                  <div class="image">                    
+                    <img src={image} alt=""/>
+                  </div>
+                </div>
+            </section>
+
+            ))
+        }
+    </div>
+</section>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+      pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+</script>
+
+<style>
+    h1 {
+        font-family: 'Onest Variable';
+    }
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.stack {
+  width: 100%;
+  max-width: 400px;
+  transition: 0.25s ease;
+  &:hover {
+    transform: rotate(5deg);
+    .card:before {
+      transform: translatey(-2%) rotate(-4deg);
+    }
+    .card:after {
+      transform: translatey(2%) rotate(4deg);
+    }
+  }
+}
+
+.card {
+  aspect-ratio: 3 / 2;
+  border: 4px solid;
+  background-color: #fff;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+  padding: 5% 5% 15% 5%;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    border: 4px solid;
+    background-color: #fff;
+    transform-origin: center center;
+    z-index: -1;
+    transition: 0.15s ease;
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    transform: translatey(-2%) rotate(-6deg);
+  }
+
+  &:after {
+    transform: translatey(2%) rotate(6deg);
+  }
+}
+.image {
+  width: 100%;
+  border: 4px solid;
+  background-color: #eee;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1 / 1) {
+  .browser-warning {
+    display: none;
+  }
+}
+
+</style>
