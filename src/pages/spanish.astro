@@ -1,0 +1,33 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+import Layout from "../layouts/Layout.astro";
+import '@fontsource-variable/onest'
+---
+
+<Layout>
+    <section class="flex max-w-6xl m-auto mt-20 mb-20 flex-wrap">
+        <section class="flex flex-col m-4 mt-20 p-4">
+            <h1 class="sm:text-4xl text-3xl font-bold">Online Helper Spanish Speakers</h1>
+            <p class="mt-6 text-x max-w-2xl text-xl">Hola, nos alegra mucho que quieras ser parte del equipo de Online Helpers, en esta seccion encontraras todos los detalles y como aplicar</p>
+            <div class="mt-10">
+                <LinkButton content="Conocer detalles"/>
+            </div>
+        </section>
+        <section class="flex justify-center items-center m-auto">
+            <img src="/spanish_1.svg" alt="" class="sm:w-sm w-80 m-4 p-4" >
+        </section>
+    </section>
+    <hr>
+    <section class="flex max-w-6xl m-auto mt-20 mb-20 flex-wrap">
+       <h1 class="sm:text-4xl text-3xl font-bold">Que te estamos ofreciendo</h1>
+    </section>
+</Layout>
+
+<style>
+    h1 {
+        font-family: 'Onest Variable';
+    }
+    p {
+        font-family: 'Onest Variable';
+    }
+</style>

@@ -1,6 +1,6 @@
 ---
 import LinkButton from "./LinkButton.astro";
-const {textUp, textMiddle, rate} = Astro.props;
+const {textUp, textMiddle, rate, href} = Astro.props;
 ---
 
 <article id="#jobs" class="pointer card animate-fade-in-up card flex flex-col justify-center items-center gap-4 p-4 m-4 z-1 hover:scale-105 transition-transform duration-300">
@@ -27,7 +27,7 @@ const {textUp, textMiddle, rate} = Astro.props;
       </div>
     </div>
 
-    <LinkButton href="/apply" content="Apply"></LinkButton>
+    <LinkButton href={href} content="Apply"></LinkButton>
   </footer>
 </article>
 
