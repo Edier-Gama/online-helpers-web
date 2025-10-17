@@ -1,0 +1,99 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+import SpanishSkills from "../components/SpanishSkills.astro";
+import Layout from "../layouts/Layout.astro";
+import '@fontsource-variable/onest'
+import OfferCard from "../components/OfferCard.astro";
+import Computer from "../components/Computer.astro";
+---
+
+<Layout>
+    <section class="flex max-w-6xl m-auto mt-20 mb-20 flex-wrap">
+        <section class="flex flex-col m-4 mt-20 p-4">
+            <h1 class="sm:text-4xl text-4xl font-bold">Online Installation Technician</h1>
+            <p class="mt-6 text-x max-w-2xl text-xl">Hi there! We’re glad you want to join the Online Helpers team. In this section, you’ll find all the details about the position and how to apply.</p>
+            <div class="mt-10">
+                <LinkButton content="Details" href="#details"/>
+            </div>
+        </section>
+        <section class="flex justify-center items-center m-auto">
+            <Computer/>
+        </section>
+    </section>
+
+    <section class="max-w-7xl mb-20 m-auto" id="details">
+        <section class="flex flex-col p-4">
+            <h1 class="sm:text-4xl text-3xl font-bold text-center">What Are We Offering?</h1>
+            <section class="mt-20 flex flex-wrap gap-4 m-auto justify-center">
+                <SpanishSkills tittle="Competitive Salary" text="We have a starting rate of $4 US dollars per hour, 40 - 50h a week" />
+                <SpanishSkills tittle="Flexibility" text="This is a 100% remote work — choose where you want to work from."/>
+                <SpanishSkills tittle="Long-Term Contract" text="We’re looking for people who want to grow and stay with us long-term."/>
+                <SpanishSkills tittle="Get paid reliably" text="Get paid reliably through a secure and effortless payment system"/>
+            </section>
+        </section>
+    </section>
+
+    <section>
+        <h1 class="sm:text-4xl text-3xl font-bold text-center">What Are the Requirements?</h1>
+        <section class="flex flex-wrap justify-center gap-20 mt-10">
+            <section class="m-4 p-4 mt-10">
+                <h1 class="text-center sm:text-left m-10 text-2xl font-bold">Your Responsibilities</h1>
+                <section class="max-w-lg mt-10">
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Co-operate with technician on-site to finish the installation</h2>            
+                    </div>
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Communicate with external personnel from our partners/customers when need be</h2>            
+                    </div>
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Delivery of Installation-related tasks when being assigned to
+</h2>            
+                    </div>
+                </section>
+                <div class="m-8">
+                    <LinkButton content="Apply"/>
+                </div>
+            </section>
+
+            <section class="m-4 p-4 mt-10">
+                <h1 class="text-center sm:text-left m-10 text-2xl font-bold">Your Qualifications</h1>
+                <section class="max-w-lg mt-10">
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Good English with an easy-to-listen accent, confidence, and smooth talking.</h2>            
+                    </div>
+                      <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Technical-related expertise/experience (Electrical, mechanical, IT, etc.)</h2>            
+                    </div>
+                      <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Stress management, fast-learning, well-organized, detail-oriented personality</h2>            
+                    </div>
+                    <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Dedicated work PC, fast and stable internet connection, enough RAM, and enough memory.</h2>            
+                    </div>
+                </section>
+                <div class="m-8">
+                    <LinkButton content="Apply" href="/"/>
+                </div>
+            </section>
+        </section>
+    </section>
+</Layout>
+
+<style>
+    body  {
+        font-family: 'Onest Variable';
+    }
+    h1 {
+        font-family: 'Onest Variable';
+    }
+    p {
+        font-family: 'Onest Variable';
+    }
+</style>

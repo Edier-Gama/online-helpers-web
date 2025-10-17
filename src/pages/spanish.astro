@@ -1,29 +1,87 @@
 ---
 import LinkButton from "../components/LinkButton.astro";
+import SpanishSkills from "../components/SpanishSkills.astro";
 import Layout from "../layouts/Layout.astro";
 import '@fontsource-variable/onest'
+import OfferCard from "../components/OfferCard.astro";
 ---
 
 <Layout>
     <section class="flex max-w-6xl m-auto mt-20 mb-20 flex-wrap">
-        <section class="flex flex-col m-4 mt-20 p-4">
-            <h1 class="sm:text-4xl text-3xl font-bold">Online Helper Spanish Speakers</h1>
+        <section class="flex flex-col m-4 mt-20 p-4 max-w-3xl">
+            <h1 class="sm:text-4xl text-4xl font-bold">Online Helper Spanish Speakers</h1>
             <p class="mt-6 text-x max-w-2xl text-xl">Hola, nos alegra mucho que quieras ser parte del equipo de Online Helpers, en esta seccion encontraras todos los detalles y como aplicar</p>
             <div class="mt-10">
-                <LinkButton content="Conocer detalles"/>
+                <LinkButton content="Detalles" href="#details"/>
             </div>
         </section>
         <section class="flex justify-center items-center m-auto">
             <img src="/spanish_1.svg" alt="" class="sm:w-sm w-80 m-4 p-4" >
         </section>
     </section>
-    <hr>
-    <section class="flex max-w-6xl m-auto mt-20 mb-20 flex-wrap">
-       <h1 class="sm:text-4xl text-3xl font-bold">Que te estamos ofreciendo</h1>
+    <section class="max-w-7xl mb-20 m-auto" id="details">
+        <section class="flex flex-col p-4">
+            <h1 class="sm:text-4xl text-3xl font-bold text-center">¿Qué te estamos ofreciendo?</h1>
+            <section class="mt-20 flex flex-wrap gap-4 m-auto justify-center">
+                <SpanishSkills tittle="Salario competitivo" text="Salario inicial de 3 dolares por hora y hasta 3.3 dolares despues de 3 meses" />
+                <SpanishSkills tittle="Flexibilidad" text="Trabajo 100% remoto, con la posibilidad de trabajar en el lugar que quieras"/>
+                <SpanishSkills tittle="Contrato a largo plazo" text="Buscamos personas para trabajar con nosotros durante largo plazo"/>
+                <SpanishSkills tittle="100% Sin voz" text="Nuestros trabajos no requieren hablar, el entorno es 100% non voice"/>
+            </section>
+        </section>
+    </section>
+    <section>
+        <h1 class="sm:text-4xl text-3xl font-bold text-center">¿Qué requerimientos tiene?</h1>
+        <section class="flex flex-wrap justify-center gap-20 mt-10">
+            <section class="m-4 p-4 mt-10">
+                <h1 class="text-center sm:text-left m-8 text-2xl font-bold">Tus responsabilidades</h1>
+                <section class="max-w-lg mt-10">
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Brindar un servicio al cliente único a través del sistema de la empresa</h2>            
+                    </div>
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Participar en las diversas actividades de la empresa</h2>            
+                    </div>
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Realizar encuestas para mejorar la eficiencia general de la empresa</h2>            
+                    </div>
+                </section>
+                <div class="m-8">
+                    <LinkButton content="Aplicar"/>
+                </div>
+            </section>
+
+            <section class="m-4 p-4 mt-10">
+                <h1 class="text-center sm:text-left m-8 text-2xl font-bold">Tus responsabilidades</h1>
+                <section class="max-w-lg mt-10">
+                     <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Dominio del inglés y el español entre B1 y B2</h2>            
+                    </div>
+                      <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Disponibilidad para trabajar en horario de Estados Unidos</h2>            
+                    </div>
+                      <div class="flex items-center">
+                        <img src="/check.svg" alt="">  
+                        <h2 class="p-4 sm:text-xl">Disponibilidad para trabajar a tiempo completo <b>(min 6 horas al día, 5 días a la semana, incluyendo 1 día del fin de semana)</b></h2>            
+                    </div>
+                </section>
+                <div class="m-8">
+                    <LinkButton content="Aplicar" href="/"/>
+                </div>
+            </section>
+        </section>
     </section>
 </Layout>
 
 <style>
+    body  {
+        font-family: 'Onest Variable';
+    }
     h1 {
         font-family: 'Onest Variable';
     }
