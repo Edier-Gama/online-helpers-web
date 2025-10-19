@@ -11,8 +11,9 @@ import OfferCard from "../components/OfferCard.astro";
         <section class="flex flex-col m-4 mt-20 p-4 max-w-3xl">
             <h1 class="sm:text-4xl text-4xl font-bold">Online Helper Spanish Speakers</h1>
             <p class="mt-6 text-x max-w-2xl text-xl">Hola, nos alegra mucho que quieras ser parte del equipo de Online Helpers, en esta seccion encontraras todos los detalles y como aplicar</p>
-            <div class="mt-10">
+            <div class="mt-10 flex flex-wrap gap-4">
                 <LinkButton content="Detalles" href="#details"/>
+                <LinkButton content="Aplicar"/>
             </div>
         </section>
         <section class="flex justify-center items-center m-auto">
@@ -32,7 +33,7 @@ import OfferCard from "../components/OfferCard.astro";
     </section>
     <section>
         <h1 class="sm:text-4xl text-3xl font-bold text-center">¿Qué requerimientos tiene?</h1>
-        <section class="flex flex-wrap justify-center gap-20 mt-10">
+        <section class="flex flex-wrap justify-center gap-10 mt-10">
             <section class="m-4 p-4 mt-10">
                 <h1 class="text-center sm:text-left m-8 text-2xl font-bold">Tus responsabilidades</h1>
                 <section class="max-w-lg mt-10">
@@ -49,9 +50,6 @@ import OfferCard from "../components/OfferCard.astro";
                         <h2 class="p-4 sm:text-xl">Realizar encuestas para mejorar la eficiencia general de la empresa</h2>            
                     </div>
                 </section>
-                <div class="m-8">
-                    <LinkButton content="Aplicar"/>
-                </div>
             </section>
 
             <section class="m-4 p-4 mt-10">
@@ -70,9 +68,6 @@ import OfferCard from "../components/OfferCard.astro";
                         <h2 class="p-4 sm:text-xl">Disponibilidad para trabajar a tiempo completo <b>(min 6 horas al día, 5 días a la semana, incluyendo 1 día del fin de semana)</b></h2>            
                     </div>
                 </section>
-                <div class="m-8">
-                    <LinkButton content="Aplicar" href="/"/>
-                </div>
             </section>
         </section>
     </section>
