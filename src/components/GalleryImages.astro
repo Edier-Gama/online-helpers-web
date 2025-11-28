@@ -1,0 +1,46 @@
+---
+import 'photoswipe/style.css';
+import '@fontsource-variable/onest'
+const IMAGES = ['/ga1.jpg','/ga2.jpg', '/ga3.jpg']
+import 'photoswipe/style.css';
+
+---
+
+<section class="mt-40">
+    <section class="flex flex-col justify-center items-center text-4xl p-10">
+        <h1 class="font-bold p-4">Be part of the best team</h1>
+        <p class="p-4 text-lg">Level up your skills, connect with amazing people, and enjoy every step of the journey with us.</p>
+    </section>
+    <div class="pswp-gallery flex flex-wrap justify-center" id="gallery">
+        {
+            IMAGES.map(image => (
+                <div class="gallery">
+                    <a href={image} 
+                     data-pswp-width="800" 
+                     data-pswp-height="600" 
+                     target="_blank">
+                     <img src={image} alt="" width="400px" height="300px" class="h-full m-2"/>
+                     </a>
+                </div>
+                
+
+            ))
+        }
+    </div>
+</section>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+      pswpModule: () => import('photoswipe')
+    });
+    lightbox.init();
+</script>
+
+<style>
+    h1 {
+        font-family: 'Onest Variable';
+    }
+</style>
