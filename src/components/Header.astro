@@ -26,33 +26,18 @@ import Hamburger from "./Hamburger.astro";
   <div class='header__container hidden xl:flex'>
     <nav class="header__nav flex">
       <section class="flex gap-8 z-10">
-        <div class="flex">
           <AnchorLink 
-              text='Home' 
-              secondText="Social" 
-              thirdText="Testimonies" 
-              idSecond="/#footer" 
-              idThird="/#gallery"/>
-        </div>
-        <div class="flex">
-          <AnchorLink 
-             text='Carrers' 
-             secondText="Spanish Jobs" 
-             thirdText="English Jobs" 
-             fourText="Technician"
-             idSecond="/spanish"
-             idThird="/english"
-             idFour="/technician"
+             text='Spanish Jobs' 
+             id="/spanish" 
              />
-        </div>
-        <div class="flex">
           <AnchorLink 
-             text='About Us' 
-             secondText="Benefits" 
-             thirdText="Privacy"
-             idSecond="/#offer"
-             idThird="/privacy"
-           />
+             text='English Jobs' 
+             id="/english" 
+             />
+          <AnchorLink 
+             text='Tecnical Jobs' 
+             id="/technician" 
+             />
         </div>
       </section>
     </nav>

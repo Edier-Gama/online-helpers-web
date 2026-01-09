@@ -1,10 +1,10 @@
 ---
-const {secondText, thirdText, text, fourText, idSecond, idThird, idFour} = Astro.props;
+const {text, id} = Astro.props;
 import '@fontsource/poppins'
 ---
 <div class="menu">
   <div class="item">
-    <a href="#" class="link" class="">
+    <a href={id} class="link" class="">
       <span>{text}</span>
       <svg viewBox="0 0 360 360" xml:space="preserve">
         <g id="SVGRepo_iconCarrier">
@@ -15,18 +15,7 @@ import '@fontsource/poppins'
         </g>
       </svg>
     </a>
-    <div class="submenu">
-      <div class="submenu-item">
-        <a href={idSecond} class="submenu-link">{secondText}</a>
-      </div>
-      <div class="submenu-item">
-        <a href={idThird} class="submenu-link">{thirdText}</a>
-      </div>
-      {fourText ?  
-     <div class="submenu-item">
-       <a href={idFour} class="submenu-link">{fourText}</a>
-     </div>  : null 
-      }
+
     </div>
   </div>
 </div>
